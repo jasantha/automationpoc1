@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [smoke test]">
+  <test thread-count="5" name="Stores Smoke Test(failed)">
+    <classes>
+      <class name="automation.StoresTest">
+        <methods>
+          <include name="testStores"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- automation.StoresTest -->
+    </classes>
+  </test> <!-- Stores Smoke Test(failed) -->
+</suite> <!-- Failed suite [smoke test] -->

@@ -1,0 +1,45 @@
+<br>
+<br>
+<form [formGroup]="storeForm" (ngSubmit)="onSubmit()">
+  
+    <label>
+      Store Number:
+      <input type="text" formControlName="storeNumber" id = storenumber>
+    </label>
+  
+    <label>
+      Store Name:
+      <input type="text" formControlName="storeName" id = storename>
+    </label>
+  
+    <label>
+        City:
+        <input type="text" formControlName="city" id = city>
+      </label>
+
+      <label>
+          State:
+          <input type="text" formControlName="state">
+        </label>
+&nbsp;
+    <button type="submit" class="btn btn-outline-primary">Add Store</button>
+  <br>
+  <br>
+    <table class="table table-striped">
+        <thead>
+          <th>Store Number</th>
+          <th>Store Name</th>
+          <th>City</th>
+          <th>State</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let store of stores">
+            <td> {{ store.storeNumber }}</td>  
+            <td> {{ store.storeName }}</td>  
+            <td> {{ store.city }}</td>  
+            <td> {{ store.state }}</td>  
+            </tr>
+        </tbody>
+      </table>
+    
+  </form>

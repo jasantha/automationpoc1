@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <test name="Tesqwerty123456">
+    <groups>
+    <run>
+    <include name ="stores"/>
+   </run></groups>
+<!--         <method-selectors> -->
+<!--             <method-selector> -->
+<!--                 <script language="beanshell"> -->
+<!--                 <![CDATA[whatGroup = System.getProperty("groupToRun"); -->
+<!--                 groups.containsKey(whatGroup); -->
+<!--                 ]]> -->
+<!--                 </script> -->
+<!--             </method-selector> -->
+<!--         </method-selectors> -->
+        <classes>
+            <class name="automation.StoresTest" />
+            <class name="automation.ProductsTest" />
+            
+        </classes>
+    </test> <!-- Test -->
+</suite> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="smoke test">
+  
+  <test name="Product Smoke Test">	
+			<groups>	
+				<run>	
+   					 <include name="products" />	   			
+        		</run>	
+       		</groups>
+       		<classes>
+      <class name="automation.ProductsTest">  
+      </class>   
+    </classes>	
+  </test>
+    
+  
+</suite>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6751" started-at="2019-02-26T06:52:38Z" finished-at="2019-02-26T06:52:45Z">
+    <groups>
+      <group name="stores">
+        <method signature="StoresTest.testStores()[pri:0, instance:automation.StoresTest@27efef64]" name="testStores" class="automation.StoresTest"/>
+      </group> <!-- stores -->
+      <group name="products">
+        <method signature="ProductsTest.testProducts()[pri:0, instance:automation.ProductsTest@6f7fd0e6]" name="testProducts" class="automation.ProductsTest"/>
+      </group> <!-- products -->
+    </groups>
+    <test name="Tesqwerty123456" duration-ms="6751" started-at="2019-02-26T06:52:38Z" finished-at="2019-02-26T06:52:45Z">
+      <class name="automation.StoresTest">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:automation.StoresTest@27efef64]" name="initializeDriver" is-config="true" duration-ms="3504" started-at="2019-02-26T06:52:38Z" finished-at="2019-02-26T06:52:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="testStores()[pri:0, instance:automation.StoresTest@27efef64]" name="testStores" duration-ms="259" started-at="2019-02-26T06:52:42Z" finished-at="2019-02-26T06:52:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStores -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.StoresTest@27efef64]" name="tearDown" is-config="true" duration-ms="133" started-at="2019-02-26T06:52:42Z" finished-at="2019-02-26T06:52:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.StoresTest -->
+      <class name="automation.ProductsTest">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:automation.ProductsTest@6f7fd0e6]" name="initializeDriver" is-config="true" duration-ms="2460" started-at="2019-02-26T06:52:42Z" finished-at="2019-02-26T06:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="testProducts()[pri:0, instance:automation.ProductsTest@6f7fd0e6]" name="testProducts" duration-ms="196" started-at="2019-02-26T06:52:44Z" finished-at="2019-02-26T06:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProducts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.ProductsTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="161" started-at="2019-02-26T06:52:45Z" finished-at="2019-02-26T06:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.ProductsTest -->
+    </test> <!-- Tesqwerty123456 -->
+  </suite> <!-- Suite -->
+</testng-results>

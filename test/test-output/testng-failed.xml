@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Tesqwerty123456(failed)">
+    <groups>
+      <run>
+        <include name="stores"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="automation.StoresTest">
+        <methods>
+          <include name="testStores"/>
+          <include name="tearDown"/>
+          <include name="initializeDriver"/>
+        </methods>
+      </class> <!-- automation.StoresTest -->
+    </classes>
+  </test> <!-- Tesqwerty123456(failed) -->
+</suite> <!-- Failed suite [Suite] -->
