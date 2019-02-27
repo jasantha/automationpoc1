@@ -22,13 +22,16 @@ public class ProductsTest extends BaseTest
         //Searching text in google text box
 		pr.productslink.click();
         pr.searchText.sendKeys("5");
+         Thread.sleep(1000);
         //Searching text in google text box
         pr.searchText1.sendKeys("product5");
+         Thread.sleep(1000);
         //Searching text in google text box
         pr.searchText2.sendKeys("description5");
+         Thread.sleep(1000);
         //Searching text in google text box
         pr.addButton.click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
 		}
 		catch(Exception e){
 			System.out.println("e"+e);

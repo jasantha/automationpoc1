@@ -24,13 +24,16 @@ public class StoresTest extends BaseTest
 
         //Searching text in google text box
         st.searchText.sendKeys("595");
+         Thread.sleep(1000);
         //Searching text in google text box
         st.searchText1.sendKeys("mooresville store");
+         Thread.sleep(1000);
         //Searching text in google text box
         st.searchText2.sendKeys("mooresville");
+         Thread.sleep(1000);
         //Searching text in google text box
         st.addStore.click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
 		}
 		catch(Exception e){
 			System.out.println("e"+e);
