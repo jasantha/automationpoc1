@@ -7,6 +7,9 @@ import { StoreComponent } from './store/store.component';
 import { ProductsComponent } from './products/products.component';
 import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {StoreapiService} from './store/storeapi.service';
+import {ProductapiService} from './products/productapi.service'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,10 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [StoreapiService,ProductapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
