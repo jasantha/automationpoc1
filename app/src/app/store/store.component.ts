@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder , FormControl } from '@angular/forms';
+import { store } from './store';
+import {StoreapiService} from './storeapi.service';
+
 
 @Component({
   selector: 'app-store',
@@ -8,19 +11,14 @@ import { FormBuilder , FormControl } from '@angular/forms';
 })
 export class StoreComponent implements OnInit {
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,private storeapiService:StoreapiService) { }
 
-  public stores = []
-  public columns=[];
+  stores:store;
+
   ngOnInit() {
 
-    this.stores =  
-     [
-          { "storeNumber":"1", "storeName": "Store Name1", "city": "Mooresville", "state": "NC" },
-          { "storeNumber":"2", "storeName": "Store Name2" , "city": "Boston", "state": "MA"},
-          { "storeNumber":"3", "storeName": "Store Name3" , "city": "San Franciso", "state": "CA"},
-          { "storeNumber":"4", "storeName": "Store Name4", "city": "Tampa", "state": "FL" }
-      ];
+    this.storeapiService.getStores().subscribe((data => {this.stores=data;console.log(this.stores)}));;
+   
   
   }
 
@@ -35,7 +33,8 @@ export class StoreComponent implements OnInit {
  onSubmit(){
   
     console.log(this.storeForm.value);
-    this.stores.push(this.storeForm.value);
+    this.storeapiService.addStore(this.storeForm.value,(data)=>{this.stores=data;console.log(this.stores)});
+    //this.stores.push(this.storeForm.value);
   }
 
 

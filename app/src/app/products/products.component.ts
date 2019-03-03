@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder , FormControl } from '@angular/forms';
-
+import {ProductapiService} from './productapi.service';
+import { product } from './product';
 
 @Component({
   selector: 'app-products',
@@ -9,17 +10,15 @@ import { FormBuilder , FormControl } from '@angular/forms';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,private productapiService:ProductapiService) { }
 
-  public products = []
+ 
+ products:product;
   ngOnInit() {
-    this.products =  
-    [
-         { "id":"1", "name": "product 1", "description": "description1"},
-         { "id":"2", "name": "product 1" , "description": "description2"},
-         { "id":"3", "name": "product 1" , "description": "description3"},
-         { "id":"4", "name": "product 1", "description": "description4" }
-     ];
+
+    this.productapiService.getProducts().subscribe((data => {this.products=data;console.log(this.products)}));;
+
+  
   }
 
   productForm = this.fb.group({
@@ -32,7 +31,8 @@ export class ProductsComponent implements OnInit {
  onSubmit(){
   
   console.log(this.productForm.value);
-  this.products.push(this.productForm.value);
+  this.productapiService.addProduct(this.productForm.value,(data)=>{this.products=data;console.log(this.products)});
+ // this.products.push(this.productForm.value);
 }
 
 
