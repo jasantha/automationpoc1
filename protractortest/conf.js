@@ -4,7 +4,7 @@ exports.config = {
   suites: {
     smoke: ['smoke-spec.js','product-spec.js'],
     regression: ['store-spec.js','product-spec.js'],
-    products:['product-spec.js','product-spec2.js'],
+    products:'product-spec.js',
     stores:'store-spec.js'
   }
   };
