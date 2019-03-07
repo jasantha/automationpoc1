@@ -1,5 +1,5 @@
 describe('testproducts', function() {
-
+//UI_TESTS_TAGS:products
     var productid = element(by.id('id'));
     var productname = element(by.id('name'));
     var description = element(by.id('description'));
