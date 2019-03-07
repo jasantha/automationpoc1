@@ -1,10 +1,10 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
-  //specs: ['store-spec.js','product-spec.js'],
+  // //specs: ['store-spec.js','product-spec.js'],
   suites: {
-    smoke: ['smoke-spec.js','product-spec.js'],
-    regression: ['store-spec.js','product-spec.js'],
-    products:'product-spec.js',
-    stores:'store-spec.js'
+  // //   smoke: ['smoke-spec.js','product-spec.js'],
+  // //   regression: ['store-spec.js','product-spec.js'],
+    products:'product-spec.js'
+  // //   stores:'store-spec.js'
   }
   };
