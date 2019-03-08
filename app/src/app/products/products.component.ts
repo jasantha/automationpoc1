@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder , FormControl } from '@angular/forms';
 import {ProductapiService} from './productapi.service';
 import { product } from './product';
-
+//UI_TESTS_TAGS:products
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
