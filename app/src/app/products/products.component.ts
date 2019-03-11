@@ -32,7 +32,7 @@ export class ProductsComponent implements OnInit {
   
   console.log(this.productForm.value);
   this.productapiService.addProduct(this.productForm.value,(data)=>{this.products=data;console.log(this.products)});
- // this.products.push(this.productForm.val);
+ // this.products.push(this.productForm.value);
 }
 
 
