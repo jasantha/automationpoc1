@@ -1,0 +1,41 @@
+<br>
+<br>
+<form [formGroup]="locationForm" (ngSubmit)="onSubmit()">
+
+    <label>
+        Product Id:
+        <input type="text" formControlName="productid" id = "productid">
+      </label>
+    
+      <label>
+        Aisle:
+        <input type="text" formControlName="aisle" id = "aisle">
+      </label>
+    
+      <label>
+          Bay:
+          <input type="text" formControlName="bay" id = "bay">
+        </label>
+  
+       
+  &nbsp;
+      <button type="submit" class="btn btn-outline-primary">Add Product Location</button>
+    <br>
+    <br>
+
+<table class="table table-striped">
+    <thead>
+      <th>Product Id</th>
+      <th>Aisle</th>
+      <th>Bay</th>
+  
+    </thead>
+    <tbody>
+      <tr *ngFor="let location of locations">
+        <td> {{ location.productid }}</td>  
+        <td> {{ location.aisle }}</td>  
+        <td> {{ location.bay }}</td>  
+        </tr>
+    </tbody>
+  </table>
+</form>
