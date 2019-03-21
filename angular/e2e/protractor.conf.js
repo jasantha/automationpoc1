@@ -8,8 +8,8 @@ exports.config = {
   allScriptsTimeout: 11000,
   //chromeDriver: '../node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.46',
   specs: [
-    './src/**/*.e2e-spec.ts',
-    '../src/app/**/fun_test/*-spec.js'
+   // './src/**/*.e2e-spec.ts',
+    '../src/**/*-spec.js'
   ],
   capabilities: {
     'browserName': 'chrome',
@@ -26,11 +26,11 @@ exports.config = {
     defaultTimeoutInterval: 30000,
     print: function() {}
   },
-  suites: {
-    products:'../src/app/products/fun_test/product-spec.js',
-    stores:'../src/app/store/fun_test/store-spec.js',
-    regression:['../src/app/products/fun_test/product-spec.js','../src/app/store/fun_test/store-spec.js']
-  },
+  // suites: {
+  //   products:'../src/app/products/fun_test/product-spec.js',
+  //   stores:'../src/app/store/fun_test/store-spec.js',
+  //   regression:['../src/app/products/fun_test/product-spec.js','../src/app/store/fun_test/store-spec.js']
+  // },
   onPrepare() {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.e2e.json')
